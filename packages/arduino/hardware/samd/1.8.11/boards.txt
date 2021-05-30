@@ -97,9 +97,10 @@ ezsammy.build.f_cpu=48000000L
 ezsammy.build.usb_product=SAME70
 ezsammy.build.usb_manufacturer=EZSBC
 ezsammy.build.board=SAME_SEVENTY
-ezsammy.build.core=arduino
+#used to be arduino
+ezsammy.build.core=ezsammy
 #ends in 21__, 20__, 19__ if flash is 2048k, 1024k, 512k resp
-ezsammy.build.extra_flags=-D__ATESAME70N21__ {build.usb_flags}
+ezsammy.build.extra_flags=-D__ATESAME70N21__ __SAME70N20__ SAME70N20 {build.usb_flags}
 ezsammy.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 ezsammy.build.openocdscript=openocd_scripts/ezsbc_same70.cfg
 ezsammy.build.variant=ezsammy
@@ -126,7 +127,8 @@ ezsammy.build.f_cpu=48000000L
 ezsammy.build.usb_product=SAME70
 ezsammy.build.usb_manufacturer=EZSBC
 ezsammy.build.board=SAMD_ZERO
-ezsammy.build.core=arduino
+#used to be arduino
+ezsammy.build.core=ezsammy
 #ends in 21__, 20__, 19__ if flash is 2048k, 1024k, 512k resp
 ezsammy.build.extra_flags=-D__ATESAME70N21__ {build.usb_flags}
 ezsammy.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld

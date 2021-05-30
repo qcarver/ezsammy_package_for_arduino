@@ -21,7 +21,13 @@
 // The definitions here needs a SAMD core >=1.6.10
 #define ARDUINO_SAMD_VARIANT_COMPLIANCE 10610
 
-#include <WVariant.h>
+/*note...to override samd Variant.h*/
+#define __ATSAMS70N20__
+#define SAME70_SERIES 
+#define SAME_SERIES
+
+
+#include "WVariant.h"
 
 // General definitions
 // -------------------
@@ -40,9 +46,9 @@
 extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT           (PINCOUNT_fn())
-#define NUM_DIGITAL_PINS     (15u)
-#define NUM_ANALOG_INPUTS    (7u)
-#define NUM_ANALOG_OUTPUTS   (1u)
+#define NUM_DIGITAL_PINS     (75u)
+#define NUM_ANALOG_INPUTS    (10u)
+#define NUM_ANALOG_OUTPUTS   (2u)
 
 // Low-level pin register query macros
 // -----------------------------------
@@ -71,13 +77,7 @@ extern "C" unsigned int PINCOUNT_fn();
 #define NINA_RESETN (31u)
 #define NINA_ACK    (35u)
 
-// LEDs
-// ----
-#define PIN_LED     (6u)
-#define LED_BUILTIN PIN_LED
-
-// Analog pins
-// -----------
+// LEDs15
 #define PIN_A0 (15u)
 #define PIN_A1 (16u)
 #define PIN_A2 (17u)

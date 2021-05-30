@@ -1,8 +1,29 @@
 {
   "folders": [
     {
-      "path": "packages/arduino"
+      "path": "packages/arduino/hardware/samd/1.8.11"
     },
-  ]
-  "__comment":"you can add more folder paths inside folders if you want a multifolder project"
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/circuitplay": true,
+      "**/extras": true,
+      "**/mkr1000": true,
+      "**/mkrfox1200": true,
+      "**/mkrgsm1400": true,
+      "**/mkrnb1500": true,
+      "**/mkrvidor4000": true,
+      "**/mkrwan1300": true,
+      "**/mkrwifi1010": true,
+      "**/mkrzero": true,
+      "**/mzero": true,
+      "**/nano_33_iot": true,
+      "**/sofia": true,
+      "**/zero": true,
+      "**/arduino_mzero": true,
+      "**/arduino_zero": true,
+      "**/*.exe":true
+
+    }
+  }
 }
