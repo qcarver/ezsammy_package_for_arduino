@@ -1,5 +1,17 @@
 # ezsammy_package_for_arduino
 
+-WHAT THIS IS
+
+If you are seeing this README.md then you have checked out
+the ezsammy_package_for_arduino
+
+To fullfill its purpose this file and project should be
+checked out into the ~/.arduino<some-number>/packages dir.
+
+There may also be an accompanying VSCode project file
+
+-HOW TO USE
+
 This WIP adds a SAM-E70 board to the Arduino IDE
 
 Check it out into the ~/.arduino<rev>/packages directory

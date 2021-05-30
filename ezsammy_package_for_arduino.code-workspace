@@ -1,0 +1,8 @@
+{
+  "folders": [
+    {
+      "path": "packages/arduino"
+    },
+  ]
+  "__comment":"you can add more folder paths inside folders if you want a multifolder project"
+}
